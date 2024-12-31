@@ -83,7 +83,7 @@
       const lastShown = localStorage.getItem('popupLastShown');
       const today = new Date().toDateString();
 
-      if (lastShown == today) {
+      if (lastShown !== today) {
         localStorage.setItem('popupLastShown', today);
         return true;
       }
